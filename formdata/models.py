@@ -33,7 +33,7 @@ class teachinfo(models.Model):
     idper = models.ForeignKey(perinfo, on_delete=models.CASCADE,unique=False, primary_key=True)
     name_of_college = models.CharField(max_length=100)
     position_in_college = models.CharField(max_length=100)
-    department = models.CharField(max_length=100,)
+    department = models.CharField(max_length=100)
     date_of_joining = models.DateField()
     date_of_completion = models.DateField()
 
@@ -71,3 +71,7 @@ class achievements(models.Model):
 class areas_of_interest(models.Model):
     idper = models.ForeignKey(perinfo, on_delete=models.CASCADE,unique=False, primary_key=True)
     name_of_area = models.CharField(max_length=100)
+
+class overallexp(models.Model):
+    idper = models.ForeignKey(perinfo, on_delete=models.CASCADE,unique=False, primary_key=True)
+    exp = models.CharField(max_length=100)

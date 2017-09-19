@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'rnsform',
         'USER' : 'postgres',
-        'PASSWORD' : 'sandy123',
+        'PASSWORD' : 'saiuma1971',
         'HOST' :'',
         'PORT' : '',
     },
